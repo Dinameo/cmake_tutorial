@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(variable_example LANGUAGES CXX)
+set(MY_VAR "Hello, CMake!")
+message(STATUS "The value of MY_VAR is: ${MY_VAR}")
+message(STATUS "CMAKE_SOURCE_DIR: ${CMAKE_SOURCE_DIR}")
+message(STATUS "CMAKE_BINARY_DIR: ${CMAKE_BINARY_DIR}")
+add_executable(main main.cpp)
