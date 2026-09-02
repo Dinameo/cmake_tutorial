@@ -1,0 +1,9 @@
+add_executable(calculator)
+target_sources(calculator
+    PRIVATE
+    main.c
+)
+target_link_libraries(calculator
+    PRIVATE
+        math
+)
