@@ -1,4 +1,4 @@
-# CMAKE TUTORIAL
+# CMAKE TUTORIAL STEP1
 > Lưu ý: hướng dẫn này sử dụng cmake 3.31 trên ubuntu jammy (22.04)
 ## Các loại generator thường sử dụng
 Bảng các generator thường sử dụng:
@@ -171,7 +171,7 @@ target_sources(calculator
         main.c
 )
 ```
-> Tham khảo code tại [example/step1/caculator_simple_bt1](example/step1/caculator_simple_bt1)
+> Tham khảo code tại **example/step1/caculator_simple_bt1**
 
 ## Build a library
 Cách thức hoạt động của lệnh này giống hệt lệnh `add_executable()` , nhưng được áp dụng riêng cho việc tạo thư viện.
@@ -282,7 +282,7 @@ target_link_libraries(calculator
         math
 )
 ```
-> Tham khảo code tại [example/step1/caculator_simple_bt2](example/step1/caculator_simple_bt2)
+> Tham khảo code tại **example/step1/caculator_simple_bt2**
 
 ## Subdirectories
 Lệnh `add_subdirectory()` cho phép chúng ta kết hợp các tệp CML nằm trong các thư mục con của dự án.
@@ -331,7 +331,7 @@ project(calculator_app)
 add_subdirectory(math)
 add_subdirectory(calculator)
 ```
-> Tham khảo code tại [example/step1/caculator_simple_bt3](example/step1/caculator_simple_bt3)
+> Tham khảo code tại **example/step1/caculator_simple_bt3**
 
 
 Do việc tái tổ chức này, chúng ta cần phải dọn dẹp thư mục chứa các tệp cài đặt ban đầu trước khi tiến hành quá trình cài đặt lại. Nếu không làm như vậy, thư mục chứa các tệp cài đặt mới (`target`) sẽ xung đột với tệp thực thi đã được tạo trước đó (`target`). Chúng ta có thể thực hiện việc này bằng cách sử dụng tùy chọn `--clean-first`

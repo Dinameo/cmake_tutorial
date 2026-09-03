@@ -1,0 +1,6 @@
+set(fruits "Banana;Apple")
+list(APPEND fruits "Cucumber")
+message("${fruits}")
+foreach(fruit IN LISTS fruits)
+    message("Hello, ${fruit}")
+endforeach()

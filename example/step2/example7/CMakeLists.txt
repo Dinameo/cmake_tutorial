@@ -1,0 +1,7 @@
+function(Test first second)
+    message("first: ${first}")
+    message("second: ${second}")
+    message("ARGV: ${ARGV}")
+    message("ARGN: ${ARGN}")
+endfunction()
+Test(Banana Tomatoe Apple)
