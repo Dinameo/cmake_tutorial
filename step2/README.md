@@ -1,4 +1,4 @@
-# CMAKE TUTORIAL STEP1
+# CMAKE TUTORIAL STEP2
 > Lưu ý: hướng dẫn này sử dụng cmake 3.31 trên ubuntu jammy (22.04)
 
 ## cmake language
@@ -197,7 +197,7 @@ if(DEFINED variable)
 ```
 
 Ví dụ:
-```
+```cmake
 set(Name "John")
 
 if(DEFINED Name)
