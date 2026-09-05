@@ -1,0 +1,9 @@
+{
+    "version": 4,
+    "configurePresets": [
+        {
+            "name": "test",
+            "binaryDir": "${sourceDir}/build"
+        }
+    ]
+}
