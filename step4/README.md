@@ -90,7 +90,7 @@ CMake Properties
     └── property liên quan install
 ```
 
-> Thanh khảo https://cmake.org/cmake/help/latest/manual/cmake-properties.7.html#manual:cmake-properties(7)
+> Tham khảo https://cmake.org/cmake/help/latest/manual/cmake-properties.7.html#manual:cmake-properties(7)
 
 `target_precompile_headers()`
 
@@ -246,6 +246,7 @@ output:
 ```bash
 ...
 [100%] Built target MyApp
+```
 
 đưa `WARNING` về `OFF`:
 ```bash
